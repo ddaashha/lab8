@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab7</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="task3.js"></script>
+  </head>
+
+  <body>
+    <main class="b-main">
+      <header class="b-header">
+        <h1>Лабораторна робота №3 .Javascript</h1>
+        <h2>Виконала Сарана Д.І. АнД-31</h2>
+      </header>
+      <ul class="menu-main">
+        <li><a href="index.html">Лабораторна робота №1 </a></li>
+        <li><a href="index2.html">Лабораторна робота №2 </a></li>
+        <li><a href="index3.html">Лабораторна робота №3 </a></li>
+      </ul>
+      <h2>Завдання на лабораторну роботу</h2>
+      <div class="b-div-task">
+        <b>Завдання: </b>Базовий клас: Зошит (поле: назва, кількість аркушів -k)
+        <br />
+        Метод: Вартість: 15 k<br />
+        Нащадок: Загальна (поле - матеріал обкладинки)<br />
+        Зміни в нащадках: Змінити вартість з урахуванням надбавки за обкладинку
+        на 50грн.
+      </div>
+
+      <div class="result">
+        <div class="form-container">
+          <h2>Звичайний зошит</h2>
+          <div class="input-group">
+            <label for="name1">Назва зошита:</label>
+            <input type="text" id="name1" placeholder="Введіть назву зошита" />
+          </div>
+          <div class="input-group">
+            <label for="k1">Кількість аркушів:</label>
+            <input
+              type="number"
+              id="k1"
+              placeholder="Введіть кількість аркушів"
+              min="0"
+            />
+          </div>
+          <button class="button" onclick="calculateCost(false)">
+            Розрахувати вартість
+          </button>
+          <div id="resultNotebook" class="result1"></div>
+
+        </div>
+
+
+        <div class="form-container">
+          <h2>Зошит з обкладинкою</h2>
+          <div class="input-group">
+            <label for="name2">Назва зошита:</label>
+            <input type="text" id="name2" placeholder="Введіть назву зошита" />
+          </div>
+          <div class="input-group">
+            <label for="k2">Кількість аркушів:</label>
+            <input
+              type="number"
+              id="k2"
+              placeholder="Введіть кількість аркушів"
+               min="0"
+            />
+          </div>
+          <div class="input-group">
+            <label for="coverMaterial">Матеріал обкладинки:</label>
+            <input
+              type="text"
+              id="coverMaterial"
+              placeholder="Введіть матеріал обкладинки"
+            />
+          </div>
+          <button class="button" onclick="calculateCost(true)">
+            Розрахувати вартість
+          </button>
+          <div id="resultGeneralNotebook" class="result1"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

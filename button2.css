@@ -1,0 +1,28 @@
+button {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 25px;
+    color: #1f0505;
+    background-color: #abc452;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #d5ca5f;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #f6c70a;
+    transform: translateY(1px);
+}
+

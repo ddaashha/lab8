@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab6</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="task2.js"></script>
+  </head>
+
+  <body>
+    <main class="b-main">
+      <header class="b-header">
+        <h1>Лабораторна робота №2 .Javascript</h1>
+        <h2>Виконала Сарана Д.І. АнД-31</h2>
+      </header>
+      <ul class="menu-main">
+        <li><a href="index.html">Лабораторна робота №1 </a></li>
+        <li><a href="index2.html">Лабораторна робота №2 </a></li>
+        <li><a a href="index3.html">Лабораторна робота №3 </a></li>
+      </ul>
+      <h2>Завдання на лабораторну роботу</h2>
+      <div class="b-div-task">
+        <b>Завдання №1:</b> На сторінці є блоки div, які містять текст. 
+        Обійдіть всі блоки div і додайте після закінчення тексту три крапки. 
+        <div class="text-block">DOM (Document Object Model) – це стандартизований підхід до пошуку
+            та маніпулювання вузлами та елементами Web-документа</div>
+        <div class="text-block">DOM дозволяє
+            виконувати такі задачі, як пошук вузлів за визначеним критерієм, додавати,
+            вилучати та замінювати вузли Web-документа</div>
+        <div class="text-block">Ще звертатись до атрибутів та
+            змінювати вміст елементів HTML, маніпулювати стилями CSS, а також
+            під‘єднувати обробники подій</div>
+        <br>
+        <button onclick="addEllipsis()"> Перетворити текст</button>
+        <br>
+
+        <b>Завдання №2:</b> Дана таблиця з числами. При натисканні на кнопку в поле введення під таблицею
+         відобразіть числа з таблиці. Виведення виконати через кому в порядку зростання чисел.
+         <table id="numberTable">
+            <tr>
+                <td>10</td>
+                <td>5</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>15</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>4</td>
+                <td>12</td>
+            </tr>
+        </table>
+        <button onclick="displaySortedNumbers()">Вивести числа</button>
+        
+        <input type="text" id="resultField" readonly>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
